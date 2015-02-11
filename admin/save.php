@@ -10,9 +10,9 @@ if (!isset($_GET['pg']) || $_GET['pg'] == "")
     exit();
 }
 if (!isset($_POST['title']) || !isset($_POST['content'])
-    || $_POST['title'] == "" || $_POST['content'] == "")
+    || $_POST['title'] == "" )
 {
-    echo "<h1>Title or Content empty</h1>";
+    echo "<h1>Title or content empty</h1>";
     goBack();
     exit();
 }
