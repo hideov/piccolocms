@@ -1,0 +1,34 @@
+INSTALL INSTRUCTIONS
+====================
+
+Load the content of this archive to your webserver.
+Then:
+* chmod 777 the directory database/
+* chmod 777 the directory files/
+* open the page install.php with your browser
+* remove install.php from your server!!
+* modify the content of admin/config.php as described below
+
+admin/config.php
+----------------
+This file contains variables used for the administration of the website.
+Edit the values of the following to match your own configuration.
+* $login_password contains the clear password used for login.
+  This is not a security issue, as if someone was able to read the source
+  of config.php and steal the password, then it would already have access
+  to the whole server!
+* $install_dir contains the path of your piccolo install insidde your server
+* $base_url contains the basis url of your install. It does not contain
+  the http:// or https:// beginning
+* $force_https can be valued true or false. Forces the usage of SSL for the
+  admin tools.
+
+Example of a config.php
+-----------------------
+
+<?php
+$login_password = "mYaWeSoM3PaSzWoRd!";
+$install_dir = "/var/www/piccolo/";
+$base_url = "www.example.com/piccolo/"; //WITHOUT HTTP/HTTPS!!!!
+$force_https = true;
+?>

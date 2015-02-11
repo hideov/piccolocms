@@ -1,0 +1,4 @@
+home=a:6:{s:4:"name";s:4:"home";s:5:"title";s:8:"Noticias";s:7:"content";s:17:"<h2>Noticias</h1>";s:9:"hierarchy";i:0;s:6:"parent";N;s:8:"subpages";a:0:{}}
+faq=a:6:{s:4:"name";s:3:"faq";s:5:"title";s:5:"F.A.Q";s:7:"content";s:14:"<h2>F.A.Q</h1>";s:9:"hierarchy";i:0;s:6:"parent";N;s:8:"subpages";a:2:{i:0;s:7:"oldfaqs";i:1;s:7:"newfaqs";}}
+oldfaqs=a:6:{s:4:"name";s:7:"oldfaqs";s:5:"title";s:8:"Old Faqs";s:7:"content";s:0:"";s:9:"hierarchy";i:1;s:6:"parent";s:3:"faq";s:8:"subpages";a:0:{}}
+newfaqs=a:6:{s:4:"name";s:7:"newfaqs";s:5:"title";s:12:"Not Old Faqs";s:7:"content";s:0:"";s:9:"hierarchy";i:1;s:6:"parent";s:3:"faq";s:8:"subpages";a:0:{}}

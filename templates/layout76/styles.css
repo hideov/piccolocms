@@ -1,0 +1,86 @@
+* { padding: 0; margin: 0; color: white;}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+ background-color: #141311;
+}
+#wrapper { 
+ margin: 0 auto;
+ width: 900px;
+ margin-top: 60px;
+}
+#header {
+ width: 900px;
+ color: #ddd;
+ padding: 10px;
+ border: 1px solid #386766;
+ height: 60px;
+ line-height: 90px;
+ margin: 10px 0px 0px 0px;
+ background: linear-gradient(to bottom, #45484d 0%, #141311 100%); 
+}
+#navigation {
+ width: 900px;
+ color: #508C8B;
+ font-weight: bold;
+ padding: 5px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ border: 0px solid #686766;
+ margin: 0px 0px 0px 0px;
+ background-color:#141311;
+ text-transform: uppercase;
+}
+#navigation a {
+ text-decoration: none;
+ color: #508C8B;
+ margin-right: 15px;
+}
+#navigation a:hover {
+	color: #FF5524;
+}
+#content { 
+ width: 100%;
+ color: #ccc;
+ border: 0px;
+ background:#141311;
+ margin: 0px 0px 0px 0px;
+ padding: 10px;
+ padding-top: 5px;
+}
+#genealogy {
+	width: 100%;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+#raw {
+	margin-left: 5px;
+	padding-left: 5px;
+	overflow:auto;
+	height: 450px;
+}
+#subpages {
+	min-width: 100px;
+	height: 450px;
+	padding-right: 5px;
+	margin-right: 5px;
+	border-right: 1px solid #386766;
+	float: left;
+	overflow-y: auto;
+}
+#submenu {
+	list-style-type: none;
+}
+#footer { 
+ width: 100%;
+ color: #ccc;
+ border: 0px;
+ border-top: 1px solid #386766;
+ background-color: #141311;
+ #margin: 0px; 
+ margin-top: 10px;
+ padding-top: 5px;
+ padding-left: 5px;
+ padding-right: 15px;
+}

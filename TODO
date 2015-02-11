@@ -1,0 +1,5 @@
+TODO
+====
+
+* Extend cleanly the FlintstoneDB class to add "swap".
+  At the moment it's hardcoded into FlintstoneDB.php

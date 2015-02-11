@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>DotaDos - Proyecto Topolobby</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="templates/layout76/styles.css" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header"><h1>{{ header.title | raw }}</h1></div>
+  <div id="navigation">
+  {% for item in navigation %}
+   <a href="index.php?pg={{ item.name }}">{{ item.title }}</a>
+  {% endfor %}
+  <!--
+   <a href="index.html">Noticias</a> -
+   <a href="topolobby.html">Que es Topolobby</a> -
+   <a href="instrucciones.html">Como jugar</a> -
+   <a href="opciones.html">Opciones disponibles</a> -
+   <a href="problemas.html">Señalacion problemas</a>
+   -->
+  </div>
+
+
+  <div id="content">
+   <div id="genealogy">
+	{% for item in genealogy %}
+    &raquo; <a href="index.php?pg={{ item.name }}">{{ item.title }}</a>
+   {% endfor %}
+   </div>
+	{% if page.subpages|length > 0 %}
+	<div id="subpages">
+	<strong>Submenu</strong>
+	{% for item in offspring %}
+   <ul id="submenu">
+   <li><a href="index.php?pg={{ item.name }}">{{ item.title }}</a></li>
+   </ul>
+   {% endfor %}
+	</div>
+	{% endif %}
+  	<div id="raw">
+	{{ page.content | raw }}
+	</div>
+
+  </div>
+
+  <div id="footer">{{ footer | raw }}<span style="float:right"><a style="color: #141311" href="admin/">Admin</a></span></div>
+ </div>
+</body>
+</html>
