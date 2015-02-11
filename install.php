@@ -66,14 +66,14 @@ $pages->set('home', array( 'name' => 'home',
                                'parent' => null,
                                'subpages' => array()
                          )); // Set keys
-$pages->set('faq', array('name' => 'install',
+$pages->set('install', array('name' => 'install',
                         'title' => 'Install instructions',
                         'content' => $install_data,
                         'hierarchy' => 0,
                         'parent' => null,
-                        'subpages' => array( 'oldfaqs', 'newfaqs' )
+                        'subpages' => array( 'support' )
                    ));
-$pages->set('oldfaqs', array( 'name' => 'support',
+$pages->set('support', array( 'name' => 'support',
                               'title' => 'Support',
                               'content' => $support_data,
                               'hierarchy' => 1,
