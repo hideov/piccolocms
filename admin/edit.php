@@ -21,16 +21,26 @@ $page = $pages->get($_GET['pg']);
 ?>
 <head>
 <script src="../includes/ckeditor/ckeditor.js"></script>
+<script>
+function checkTitle()
+{
+  var title = document.getElementById("title").value;
+  if (title == "")
+    { alert("You must insert a title to the page!"); }
+  else
+    { document.getElementById("editform").submit(); }
+}
+</script>
 </head>
 
 <h1>Editing <?php echo $_GET['pg']; ?>
 <span style="float: right"><a href="index.php">back</a></span></h1>
 
-<form action="save.php?pg=<?php echo $_GET['pg']; ?>" method="post">
-<p>Title: <input type="text" name="title" value="<?php echo $page['title']; ?>"></p>
+<form id="editform" action="save.php?pg=<?php echo $_GET['pg']; ?>" method="post">
+<p>Title: <input type="text" id="title" name="title" value="<?php echo $page['title']; ?>"></p>
 <p>Content:<br/><textarea id="content" name="content"><?php echo $page['content']; ?></textarea></p>
 <input type="hidden" name="supposed_parent" value="<?php echo $_GET['parent']; ?>">
-<input type="submit" value="save page">
+<input type="button" value="save page" onclick=checkTitle()>
 <script>
 // Replace the <textarea id="content"> with a CKEditor
 // instance, using default configuration.
