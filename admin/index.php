@@ -111,9 +111,9 @@ Remember: html tags inside title, motto and footer will show screwed up, but wor
     onclick="window.location.href='database_backup.php'">
 </div>
 <div>
-<h3>Free software used (need to add versions)</h3>
+<h3>Free software used</h3>
 <ul>
-<li>ckeditor 4.4.7 (Mozilla Public License) </li>
+<li>ckeditor 4.4.7 (Mozilla Public License)</li>
 <li>twig 1.18.0 (BSD license)</li>
 <li>Flinstone 1.8 (modded adding method swap, see FlintstoneDB.php) (MIT License)</li>
 <li>class.upload.php v0.33dev (http://www.verot.net/download/class.upload.php/class.upload_0.33dev.txt) (GPL v2)</li>
