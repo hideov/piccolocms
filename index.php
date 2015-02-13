@@ -53,7 +53,11 @@ $genealogy = array_reverse($genealogy);
 require_once 'includes/twig/vendor/autoload.php';
 $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader);
+
+# Choose the template you prefer, oldie or slick
 $template = $twig->loadTemplate('layout76/index.html');
+#$template = $twig->loadTemplate('pure-layout-side-menu/index.html');
+
 echo $template->render(array('header' => $header,
                              'footer' => $footer,
                              'navigation' => $menu,
