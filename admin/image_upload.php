@@ -38,6 +38,7 @@ if (isset($_FILES['image_field'])) {
 <p style="font-size:small">Url to picture: <?php echo "http://$base_url/files/$img_name.$foo->file_src_name_ext"; ?></p>
 <p style="font-size:small">Url to thumbnail: <?php echo "http://$base_url/files/${img_name}_thumb.gif"; ?></p>
 <img src="../files/<?php echo $img_name; ?>_thumb.gif">
+<p><a href="image_upload.php" target="image_upload">Load another picture</a></p>
 
 <?php 
 # If no picture was uploaded, show the upload form
