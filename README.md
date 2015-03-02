@@ -19,6 +19,10 @@ Features
 Links
 =====
 
-You can also find us on http://piccolocms.altervista.org and http://sourceforge.net/p/piccolocms/
+You can find us on:
+* http://piccolocms.altervista.org
+* http://sourceforge.net/p/piccolocms/
+* https://github.com/hideov/piccolocms
+
 
 
