@@ -5,6 +5,7 @@ use Flintstone\Flintstone;
 
 # Declare directory where databases are
 $options = array('dir' => 'database/');
+$cane = "canemarcio";
 
 # Load the databases
 $site = Flintstone::load('site', $options);
